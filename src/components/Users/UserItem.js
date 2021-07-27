@@ -1,3 +1,4 @@
+import { Button } from 'reactstrap';
 import React, { Component } from 'react';
 
 import { withFirebase } from '../Firebase';
@@ -22,7 +23,7 @@ class UserItem extends Component {
 
     this.props.firebase
       .user(this.props.match.params.id)
-      .on('value', snapshot => {
+      .on('value', (snapshot) => {
         this.setState({
           user: snapshot.val(),
           loading: false,
@@ -43,7 +44,7 @@ class UserItem extends Component {
 
     return (
       <div>
-        <h2>User ({this.props.match.params.id})</h2>
+        <h2 className="title">User ({this.props.match.params.id})</h2>
         {loading && <div>Loading ...</div>}
 
         {user && (
@@ -58,12 +59,12 @@ class UserItem extends Component {
               <strong>Username:</strong> {user.username}
             </span>
             <span>
-              <button
+              <Button
                 type="button"
                 onClick={this.onSendPasswordResetEmail}
               >
                 Send Password Reset
-              </button>
+              </Button>
             </span>
           </div>
         )}
