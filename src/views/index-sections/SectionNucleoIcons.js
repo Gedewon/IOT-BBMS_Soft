@@ -12,6 +12,7 @@ import {
 } from 'reactstrap';
 
 // core components
+import Switch from '../../components/Switch/Switch';
 
 function SectionNucleoIcons() {
   return (
@@ -83,13 +84,7 @@ function SectionNucleoIcons() {
                   </a>
                 </CardBody>
                 <div>
-                  <Button
-                    type="button"
-                    class="btn btn-dark btn-lg "
-                    align="right"
-                  >
-                    <label> Turn ON</label>
-                  </Button>
+                  <Switch id={`react-switch-Fan`} />
                 </div>
               </Card>
             </Col>
@@ -124,13 +119,7 @@ function SectionNucleoIcons() {
                   </a>
                 </CardBody>
                 <div>
-                  <Button
-                    type="button"
-                    class="btn btn-dark btn-lg "
-                    align="right"
-                  >
-                    <label> Turn ON</label>
-                  </Button>
+                  <Switch id={`react-switch-motor`} />
                 </div>
               </Card>
             </Col>
@@ -166,13 +155,7 @@ function SectionNucleoIcons() {
                   </a>
                 </CardBody>
                 <div>
-                  <Button
-                    type="button"
-                    class="btn btn-dark btn-lg "
-                    align="right"
-                  >
-                    <label> Turn ON</label>
-                  </Button>
+                  <Switch id={`react-switch-music`} />
                 </div>
               </Card>
             </Col>
