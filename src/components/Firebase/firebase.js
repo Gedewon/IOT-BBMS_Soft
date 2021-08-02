@@ -51,24 +51,25 @@ class Firebase {
 
   doSignOut = () => this.auth.signOut();
 
-  doPasswordReset = email => this.auth.sendPasswordResetEmail(email);
+  doPasswordReset = (email) =>
+    this.auth.sendPasswordResetEmail(email);
 
   doSendEmailVerification = () =>
     this.auth.currentUser.sendEmailVerification({
       url: process.env.REACT_APP_CONFIRMATION_EMAIL_REDIRECT,
     });
 
-  doPasswordUpdate = password =>
+  doPasswordUpdate = (password) =>
     this.auth.currentUser.updatePassword(password);
 
   // *** Merge Auth and DB User API *** //
 
   onAuthUserListener = (next, fallback) =>
-    this.auth.onAuthStateChanged(authUser => {
+    this.auth.onAuthStateChanged((authUser) => {
       if (authUser) {
         this.user(authUser.uid)
           .once('value')
-          .then(snapshot => {
+          .then((snapshot) => {
             const dbUser = snapshot.val();
 
             // default empty roles
@@ -94,15 +95,23 @@ class Firebase {
 
   // *** User API ***
 
-  user = uid => this.db.ref(`users/${uid}`);
+  user = (uid) => this.db.ref(`users/${uid}`);
 
   users = () => this.db.ref('users');
 
   // *** Message API ***
 
-  message = uid => this.db.ref(`messages/${uid}`);
+  message = (uid) => this.db.ref(`messages/${uid}`);
 
   messages = () => this.db.ref('messages');
+
+  // *** Controller API ***
+
+  // Fan = () => this.db.ref('Controller/Fan');
+  // Music = () => this.db.ref('Controller/Music');
+  // Motor = () => this.db.ref('Controller/Motor');
+
+  Controller = (cid) => this.db.ref(`Controller/${cid}`);
 }
 
 export default Firebase;

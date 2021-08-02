@@ -1,26 +1,59 @@
-import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
+import { Input, Label } from 'reactstrap';
+import { withFirebase } from '../../components/Firebase';
+
 import './Switch.css';
 const Switch = ({ id }) => {
-  const [value, setValue] = useState(false);
+  const [value, setValue] = useState('OFF');
 
-  return (
-    <>
-      <input
-        checked={value}
-        onChange={() => setValue(!value)}
-        className="react-switch-checkbox"
-        id={id}
-        type="checkbox"
-      />
-      <label
-        style={{ background: value && '#06D6A0' }}
-        className="react-switch-label"
-        htmlFor={id}
-      >
-        <span className={`react-switch-button`} />
-      </label>
-    </>
-  );
+  return <SwitchButton value={value} setValue={setValue} id={id} />;
 };
+class SwitchBase extends Component {
+  constructor(props) {
+    super(props);
+  }
+  componentDidMount() {
+    this.props.firebase
+      .Controller(this.props.id)
+      .on('value', (snapshot) => {
+        const usersObject = snapshot.val();
+        console.log(usersObject);
 
+        this.props.setValue(usersObject);
+      });
+  }
+
+  onChange = (event) => {
+    //toggle the value for the UI
+    this.props.setValue(this.props.value === 'OFF' ? 'ON' : 'OFF');
+
+    //ADD THE VALUE TO THE FIREBASE REALTIME DATABASE
+    const finalValue = this.props.value === 'OFF' ? 'ON' : 'OFF';
+    this.props.firebase.Controller(this.props.id).set(finalValue);
+  };
+
+  render() {
+    return (
+      <>
+        <Input
+          checked={this.props.value === 'ON'}
+          onChange={this.onChange}
+          className="react-switch-checkbox"
+          id={this.props.id}
+          type="checkbox"
+        />
+        <Label
+          style={{
+            background: this.props.value == 'ON' && '#06D6A0',
+          }}
+          className="react-switch-label"
+          htmlFor={this.props.id}
+        >
+          <span className={`react-switch-button`} />
+        </Label>
+      </>
+    );
+  }
+}
+const SwitchButton = withFirebase(SwitchBase);
 export default Switch;

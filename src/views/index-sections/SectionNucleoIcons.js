@@ -84,7 +84,7 @@ function SectionNucleoIcons() {
                   </a>
                 </CardBody>
                 <div>
-                  <Switch id={`react-switch-Fan`} />
+                  <Switch id={`Fan`} />
                 </div>
               </Card>
             </Col>
@@ -119,7 +119,11 @@ function SectionNucleoIcons() {
                   </a>
                 </CardBody>
                 <div>
-                  <Switch id={`react-switch-motor`} />
+                  <Switch
+                    // isOn={value}
+                    // handleToggle={() => setValue(!value)}
+                    id={`Motor`}
+                  />
                 </div>
               </Card>
             </Col>
@@ -155,7 +159,7 @@ function SectionNucleoIcons() {
                   </a>
                 </CardBody>
                 <div>
-                  <Switch id={`react-switch-music`} />
+                  <Switch id={`Music`} />
                 </div>
               </Card>
             </Col>
