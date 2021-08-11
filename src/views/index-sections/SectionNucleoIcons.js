@@ -50,6 +50,28 @@ function SectionNucleoIcons() {
               <div className="icons-container"></div>
             </Col>
           </Row>
+          <Row>
+            <Col>
+              <h1 tag="h1">Auto Pilot</h1>
+
+              <h6 className="card-category">
+                let us moniter your Baby while you are at work.{' '}
+              </h6>
+            </Col>
+
+            <Col>
+              <h6 className="card-category">
+                To activate Autopilot, you simply toggle the Autopilot
+                control stalk towards you once and the system will
+                take over. To disengage Autopilot, you push the button
+                on the end of the baby control stalk.
+              </h6>
+            </Col>
+            <Col>
+              <Switch id={`AUTO`} />
+            </Col>
+          </Row>
+          {/* <div className="author"></div> */}
         </Container>
       </div>{' '}
       <div className=" section-dark section-nucleo-icons">
