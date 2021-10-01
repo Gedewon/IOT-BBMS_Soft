@@ -112,6 +112,7 @@ class Firebase {
   // Motor = () => this.db.ref('Controller/Motor');
 
   Controller = (cid) => this.db.ref(`Controller/${cid}`);
+  Status = (cid) => this.db.ref(`Status/${cid}`);
 }
 
 export default Firebase;

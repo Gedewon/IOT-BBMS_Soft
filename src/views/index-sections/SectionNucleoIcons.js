@@ -13,6 +13,7 @@ import {
 
 // core components
 import Switch from '../../components/Switch/Switch';
+import Read from '../../components/ReadSensorValue/Read';
 
 function SectionNucleoIcons() {
   return (
@@ -50,6 +51,14 @@ function SectionNucleoIcons() {
               <div className="icons-container"></div>
             </Col>
           </Row>
+          <h2 className="title">
+            Humidity ::::---- <Read id={`Humidity`}></Read>
+          </h2>
+
+          <h2 className="title">
+            Temperature ::::---- <Read id={`Temperature`}></Read>
+          </h2>
+
           <Row>
             <Col>
               <h1 tag="h1">Auto Pilot</h1>
