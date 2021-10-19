@@ -1,15 +1,15 @@
 /*eslint-disable*/
-import React from "react";
+import React from 'react';
 
 // reactstrap components
-import { Row, Container } from "reactstrap";
+import { Row, Container } from 'reactstrap';
 
 function DemoFooter() {
   return (
     <footer className="footer footer-black footer-white">
       <Container>
         <Row>
-          <nav className="footer-nav">
+          {/* <nav className="footer-nav">
             <ul>
               <li>
                 <a href="#">Analysis</a>
@@ -21,11 +21,12 @@ function DemoFooter() {
                 <a href="#">recommendation</a>
               </li>
             </ul>
-          </nav>
+          </nav> */}
           <div className="credits ml-auto">
             <span className="copyright">
-              © {new Date().getFullYear()}, made with{" "}
-              <i className="fa fa-heart heart" /> by AAiT Student's
+              © {new Date().getFullYear()}, made with{' '}
+              <i className="fa fa-heart heart" /> by Gedewon
+              Haylegebrale
             </span>
           </div>
         </Row>

@@ -62,7 +62,7 @@ function IndexNavbar({ authUser }) {
             // target="_blank"
             title="Coded by Creative Tim"
           >
-            IOT-BBMS
+            Efoye
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}

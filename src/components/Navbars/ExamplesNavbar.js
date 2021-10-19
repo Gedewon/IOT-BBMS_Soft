@@ -62,7 +62,7 @@ function ExamplesNavbar() {
             title="Coded by Creative Tim"
             // tag={Link}
           >
-            IOT-BBMS
+            Efoye
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}

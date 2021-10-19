@@ -1,18 +1,26 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 // nodejs library that concatenates strings
-import classnames from "classnames";
+import classnames from 'classnames';
 
 // reactstrap components
-import { Collapse, NavbarBrand, Navbar, Nav, Container } from "reactstrap";
+import {
+  Collapse,
+  NavbarBrand,
+  Navbar,
+  Nav,
+  Container,
+} from 'reactstrap';
 
 function ExamplesNavbar() {
-  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+  const [navbarColor, setNavbarColor] = React.useState(
+    'navbar-transparent',
+  );
   const [navbarCollapse, setNavbarCollapse] = React.useState(false);
 
   const toggleNavbarCollapse = () => {
     setNavbarCollapse(!navbarCollapse);
-    document.documentElement.classList.toggle("nav-open");
+    document.documentElement.classList.toggle('nav-open');
   };
 
   React.useEffect(() => {
@@ -21,24 +29,24 @@ function ExamplesNavbar() {
         document.documentElement.scrollTop > 299 ||
         document.body.scrollTop > 299
       ) {
-        setNavbarColor("");
+        setNavbarColor('');
       } else if (
         document.documentElement.scrollTop < 300 ||
         document.body.scrollTop < 300
       ) {
-        setNavbarColor("navbar-transparent");
+        setNavbarColor('navbar-transparent');
       }
     };
 
-    window.addEventListener("scroll", updateNavbarColor);
+    window.addEventListener('scroll', updateNavbarColor);
 
     return function cleanup() {
-      window.removeEventListener("scroll", updateNavbarColor);
+      window.removeEventListener('scroll', updateNavbarColor);
     };
   });
   return (
     <Navbar
-      className={classnames("fixed-top", navbarColor)}
+      className={classnames('fixed-top', navbarColor)}
       color-on-scroll="300"
       expand="lg"
     >
@@ -51,11 +59,11 @@ function ExamplesNavbar() {
             title="Coded by Creative Tim"
             tag={Link}
           >
-            IOT-BBMS
+            Efoye
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
-            className={classnames("navbar-toggler navbar-toggler", {
+            className={classnames('navbar-toggler navbar-toggler', {
               toggled: navbarCollapse,
             })}
             onClick={toggleNavbarCollapse}

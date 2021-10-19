@@ -325,14 +325,15 @@ function LandingPage() {
                     >
                       <i className="fa fa-google-plus" />
                     </Button>
-                    <Button
-                      className="btn-just-icon btn-neutral ml-1"
-                      color="link"
-                      href="#pablo"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      <i className="fa fa-linkedin" />
-                    </Button>
+                    <a href="https://www.linkedin.com/in/gedewon/">
+                      <Button
+                        className="btn-just-icon btn-neutral ml-1"
+                        color="link"
+                        // onClick={(e) => e.preventDefault()}
+                      >
+                        <i className="fa fa-linkedin" />
+                      </Button>
+                    </a>
                   </CardFooter>
                 </Card>
               </Col>

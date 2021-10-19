@@ -105,14 +105,10 @@ class Firebase {
 
   messages = () => this.db.ref('messages');
 
-  // *** Controller API ***
+  // authUser_deviceID = this.authUser.deviceId;
 
-  // Fan = () => this.db.ref('Controller/Fan');
-  // Music = () => this.db.ref('Controller/Music');
-  // Motor = () => this.db.ref('Controller/Motor');
-
-  Controller = (cid) => this.db.ref(`Controller/${cid}`);
-  Status = (cid) => this.db.ref(`Status/${cid}`);
+  Controller = (cid, did) => this.db.ref(`${did}/Controller/${cid}`);
+  Status = (cid, did) => this.db.ref(`${did}/Status/${cid}`);
 }
 
 export default Firebase;

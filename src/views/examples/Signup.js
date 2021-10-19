@@ -85,6 +85,7 @@ const INITIAL_STATE = {
   passwordTwo: '',
   isAdmin: false,
   error: null,
+  deviceId: '',
 };
 
 //Error code
@@ -106,7 +107,8 @@ class SignUpFormBase extends Component {
   }
 
   onSubmit = (event) => {
-    const { username, email, passwordOne, isAdmin } = this.state;
+    const { username, email, passwordOne, isAdmin, deviceId } =
+      this.state;
     const roles = {};
 
     if (isAdmin) {
@@ -121,6 +123,7 @@ class SignUpFormBase extends Component {
           username,
           email,
           roles,
+          deviceId,
         });
       })
       .then(() => {
@@ -144,10 +147,12 @@ class SignUpFormBase extends Component {
   onChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
   };
-
-  onChangeCheckbox = (event) => {
-    this.setState({ [event.target.name]: event.target.checked });
+  onChangeDevice = (event) => {
+    this.setState({ deviceId: event.target.value });
   };
+  // onChangeCheckbox = (event) => {
+  //   this.setState({ [event.target.name]: event.target.checked });
+  // };
   render() {
     const {
       username,
@@ -156,6 +161,7 @@ class SignUpFormBase extends Component {
       passwordTwo,
       isAdmin,
       error,
+      deviceId,
     } = this.state;
 
     const isInvalid =
@@ -197,13 +203,23 @@ class SignUpFormBase extends Component {
           placeholder="confirm Password"
           type="password"
         />
-        <label> Admin :</label>
+        {/* commenting out admin side's */}
+        {/* <label> Admin :</label>
         <Input
           name="isAdmin"
           checked={isAdmin}
           onChange={this.onChangeCheckbox}
           type="checkbox"
-        ></Input>
+        ></Input> */}
+        <br />
+        <label>Device Id:</label>
+        <Input
+          name="deviceId"
+          value={deviceId}
+          onChange={this.onChange}
+          placeholder="Device ID"
+          type="text"
+        />
         <Button
           block
           className="btn-round"

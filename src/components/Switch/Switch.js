@@ -1,7 +1,7 @@
 import React, { Component, useState } from 'react';
 import { Input, Label } from 'reactstrap';
 import { withFirebase } from '../../components/Firebase';
-
+import { AuthUserContext } from '../Session';
 import './Switch.css';
 const Switch = ({ id }) => {
   const [value, setValue] = useState('OFF');
@@ -9,12 +9,16 @@ const Switch = ({ id }) => {
   return <SwitchButton value={value} setValue={setValue} id={id} />;
 };
 class SwitchBase extends Component {
+  static contextType = AuthUserContext;
+
   constructor(props) {
     super(props);
   }
   componentDidMount() {
+    const user = this.context;
+
     this.props.firebase
-      .Controller(this.props.id)
+      .Controller(this.props.id, user.deviceId)
       .on('value', (snapshot) => {
         const usersObject = snapshot.val();
         console.log(usersObject);
@@ -24,12 +28,16 @@ class SwitchBase extends Component {
   }
 
   onChange = (event) => {
+    const user = this.context;
+
     //toggle the value for the UI
     this.props.setValue(this.props.value === 'OFF' ? 'ON' : 'OFF');
 
     //ADD THE VALUE TO THE FIREBASE REALTIME DATABASE
     const finalValue = this.props.value === 'OFF' ? 'ON' : 'OFF';
-    this.props.firebase.Controller(this.props.id).set(finalValue);
+    this.props.firebase
+      .Controller(this.props.id, user.deviceId)
+      .set(finalValue);
   };
 
   render() {
