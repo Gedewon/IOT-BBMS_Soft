@@ -128,7 +128,7 @@ function IndexNavbar({ authUser }) {
             </NavItem>
             <NavItem>
               <NavLink
-                href="#"
+                href="/document-page"
                 // target="_blank"
               >
                 <i className="nc-icon nc-book-bookmark" />{' '}

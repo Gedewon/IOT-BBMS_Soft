@@ -11,6 +11,7 @@ import Index from 'views/Index.js';
 import NucleoIcons from 'views/NucleoIcons.js';
 import LandingPage from 'views/examples/LandingPage.js';
 import ProfilePage from 'views/examples/ProfilePage.js';
+import DocumentPage from 'views/examples/DocumentPage.js';
 import LoginPage from 'views/examples/login';
 import Signup from 'views/examples/Signup.js';
 import Account from './components/Account/index';
@@ -42,6 +43,10 @@ const App = () => (
       <Route
         path="/profile-page"
         render={(props) => <ProfilePage {...props} />}
+      />
+      <Route
+        path="/document-page"
+        render={(props) => <DocumentPage {...props} />}
       />
       <Route
         path="/login"

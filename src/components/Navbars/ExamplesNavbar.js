@@ -83,20 +83,29 @@ function ExamplesNavbar() {
         >
           <Nav navbar>
             <NavItem>
-              <NavLink href="#aboutus">
+              <NavLink
+                href="/document-page"
+                // target="_blank"
+              >
+                <i className="nc-icon nc-book-bookmark" />{' '}
+                Documentation
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="landing-page#aboutus">
                 {' '}
                 {/*removed tag={Link}*/}
                 <i
-                  href="#aboutus"
+                  href="landing-page#aboutus"
                   className="nc-icon nc-layout-11"
                 />{' '}
                 About us
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#contactus">
+              <NavLink href="landing-page#contactus">
                 <i
-                  href="#contactus"
+                  href="landing-page#contactus"
                   className="nc-icon nc-book-bookmark"
                 />{' '}
                 Contact us
