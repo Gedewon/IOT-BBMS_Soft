@@ -12,6 +12,7 @@ import NucleoIcons from 'views/NucleoIcons.js';
 import LandingPage from 'views/examples/LandingPage.js';
 import ProfilePage from 'views/examples/ProfilePage.js';
 import DocumentPage from 'views/examples/DocumentPage.js';
+import ProductPage from 'views/examples/ProductPage.js';
 import LoginPage from 'views/examples/login';
 import Signup from 'views/examples/Signup.js';
 import Account from './components/Account/index';
@@ -47,6 +48,10 @@ const App = () => (
       <Route
         path="/document-page"
         render={(props) => <DocumentPage {...props} />}
+      />
+      <Route
+        path="/product-page"
+        render={(props) => <ProductPage {...props} />}
       />
       <Route
         path="/login"

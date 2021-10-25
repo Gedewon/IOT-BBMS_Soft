@@ -210,6 +210,79 @@ function LandingPage() {
                   </CardFooter>
                 </Card> */}
               {/* </Col> */}
+              <Col md="12">
+                <Card className="card-profile card-plain">
+                  <div className="card-avatar">
+                    <a
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <img
+                        alt="..."
+                        src={
+                          require('assets/img/faces/face_gedi.JPG')
+                            .default
+                        }
+                      />
+                    </a>
+                  </div>
+                  <CardBody>
+                    <a
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <div className="author">
+                        <CardTitle tag="h4">
+                          Gedewon H/Gebrale
+                        </CardTitle>
+                        <h6 className="card-category">
+                          CEO AND FOUNDER
+                        </h6>
+                        <h6 className="card-category">
+                          (Software Developer)
+                        </h6>
+                      </div>
+                    </a>
+                    <div>
+                      <p className="card-description text-center">
+                        Teamwork is the ability to work together
+                        toward a common vision. The ability to direct
+                        individual accomplishments toward
+                        organizational objectives. It is the fuel that
+                        allows common people to attain uncommon
+                        results.
+                      </p>
+                    </div>
+                  </CardBody>
+                  <CardFooter className="text-center">
+                    <Button
+                      className="btn-just-icon btn-neutral"
+                      color="link"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-twitter" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon btn-neutral ml-1"
+                      color="link"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-google-plus" />
+                    </Button>
+                    <a href="https://www.linkedin.com/in/gedewon/">
+                      <Button
+                        className="btn-just-icon btn-neutral ml-1"
+                        color="link"
+                        // onClick={(e) => e.preventDefault()}
+                      >
+                        <i className="fa fa-linkedin" />
+                      </Button>
+                    </a>
+                  </CardFooter>
+                </Card>
+              </Col>
               <Col md="6">
                 <Card className="card-profile card-plain">
                   <div className="card-avatar">
@@ -235,7 +308,9 @@ function LandingPage() {
                         <CardTitle tag="h4">
                           Yohannes Solomon{' '}
                         </CardTitle>
-                        <h6 className="card-category">Designer</h6>
+                        <h6 className="card-category">
+                          Mobile App Developer
+                        </h6>
                       </div>
                     </a>
                     <p className="card-description text-center">
@@ -283,7 +358,7 @@ function LandingPage() {
                       <img
                         alt="..."
                         src={
-                          require('assets/img/faces/face_gedi.JPG')
+                          require('assets/img/faces/beki_face.jpg')
                             .default
                         }
                       />
@@ -295,10 +370,10 @@ function LandingPage() {
                       onClick={(e) => e.preventDefault()}
                     >
                       <div className="author">
-                        <CardTitle tag="h4">
-                          Gedewon H/Gebrale
-                        </CardTitle>
-                        <h6 className="card-category">Developer</h6>
+                        <CardTitle tag="h4">Berket Yonas</CardTitle>
+                        <h6 className="card-category">
+                          Manufacturing
+                        </h6>
                       </div>
                     </a>
                     <p className="card-description text-center">

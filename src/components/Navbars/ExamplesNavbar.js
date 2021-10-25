@@ -84,6 +84,14 @@ function ExamplesNavbar() {
           <Nav navbar>
             <NavItem>
               <NavLink
+                href="/product-page"
+                // target="_blank"
+              >
+                <i className="nc-icon nc-book-product" /> Product Page
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink
                 href="/document-page"
                 // target="_blank"
               >
@@ -97,7 +105,7 @@ function ExamplesNavbar() {
                 {/*removed tag={Link}*/}
                 <i
                   href="landing-page#aboutus"
-                  className="nc-icon nc-layout-11"
+                  className="nc-icon "
                 />{' '}
                 About us
               </NavLink>
@@ -106,7 +114,7 @@ function ExamplesNavbar() {
               <NavLink href="landing-page#contactus">
                 <i
                   href="landing-page#contactus"
-                  className="nc-icon nc-book-bookmark"
+                  className="nc-icon "
                 />{' '}
                 Contact us
               </NavLink>
@@ -119,7 +127,7 @@ function ExamplesNavbar() {
                 href="/login"
                 // target="_blank"
               >
-                <i className="nc-icon nc-spaceship"></i> SignIn
+                <i className="nc-icon "></i> SignIn
               </Button>
             </NavItem>
           </Nav>
