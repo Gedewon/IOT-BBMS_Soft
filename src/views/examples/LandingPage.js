@@ -293,7 +293,7 @@ function LandingPage() {
                       <img
                         alt="..."
                         src={
-                          require('assets/img/faces/face_jo.jpg')
+                          require('')
                             .default
                         }
                       />
@@ -306,10 +306,10 @@ function LandingPage() {
                     >
                       <div className="author">
                         <CardTitle tag="h4">
-                          Yohannes Solomon{' '}
+                         X
                         </CardTitle>
                         <h6 className="card-category">
-                          Mobile App Developer
+                          X
                         </h6>
                       </div>
                     </a>
@@ -358,7 +358,7 @@ function LandingPage() {
                       <img
                         alt="..."
                         src={
-                          require('assets/img/faces/beki_face.jpg')
+                          require('')
                             .default
                         }
                       />
@@ -370,7 +370,7 @@ function LandingPage() {
                       onClick={(e) => e.preventDefault()}
                     >
                       <div className="author">
-                        <CardTitle tag="h4">Berket Yonas</CardTitle>
+                        <CardTitle tag="h4">Y</CardTitle>
                         <h6 className="card-category">
                           Manufacturing
                         </h6>
