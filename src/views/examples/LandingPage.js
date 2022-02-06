@@ -290,13 +290,7 @@ function LandingPage() {
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
-                      <img
-                        alt="..."
-                        src={
-                          require('')
-                            .default
-                        }
-                      />
+                      <img alt="..." src={require('').default} />
                     </a>
                   </div>
                   <CardBody>
@@ -305,12 +299,8 @@ function LandingPage() {
                       onClick={(e) => e.preventDefault()}
                     >
                       <div className="author">
-                        <CardTitle tag="h4">
-                         X
-                        </CardTitle>
-                        <h6 className="card-category">
-                          X
-                        </h6>
+                        <CardTitle tag="h4">X</CardTitle>
+                        <h6 className="card-category">X</h6>
                       </div>
                     </a>
                     <p className="card-description text-center">
@@ -355,13 +345,7 @@ function LandingPage() {
                       href="#pablo"
                       onClick={(e) => e.preventDefault()}
                     >
-                      <img
-                        alt="..."
-                        src={
-                          require('')
-                            .default
-                        }
-                      />
+                      <img alt="..." src={require('').default} />
                     </a>
                   </div>
                   <CardBody>
@@ -460,7 +444,7 @@ function LandingPage() {
                         color="danger"
                         size="lg"
                       >
-                        Send Message
+                        Send Message !!
                       </Button>
                     </Col>
                   </Row>
