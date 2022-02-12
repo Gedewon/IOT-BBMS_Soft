@@ -156,10 +156,7 @@ At present, we officially aim to support the last two versions of the following 
 
 **Dashboards:**
 
-| HTML                                                                                                                                                                                                                           | React                                                                                                                                                                                                                                       | Vue                                                                                                                                                                                                                            | Angular                                                                                                                                                                                                                                     |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [![Paper Dashboard  HTML](https://raw.githubusercontent.com/Efoye_IOT-BBMS/public-assets/master/paper-dashboard-2-html/opt_pd2_thumbnail.jpg)](https://www.Efoye-IOT-BBMS.com/product/paper-dashboard-2?ref=pkr-github-readme) | [![Paper Dashboard  React](https://raw.githubusercontent.com/Efoye_IOT-BBMS/public-assets/master/paper-dashboard-react/opt_pd_react_thumbnail.jpg)](https://www.Efoye-IOT-BBMS.com/product/paper-dashboard-pro-react?ref=pkr-github-readme) | [![Vue Paper Dashboard](https://raw.githubusercontent.com/Efoye_IOT-BBMS/public-assets/master/vue-paper-dashboard/opt_pd_vue_thumbnail.jpg)](https://www.Efoye-IOT-BBMS.com/product/vue-paper-dashboard?ref=pkr-github-readme) | [![ Paper Dashboard Angular](https://raw.githubusercontent.com/Efoye_IOT-BBMS/public-assets/master/IOT-BBMS-2-angular/opt_pk2_angular_thumbnail.jpg)](https://www.Efoye-IOT-BBMS.com/product/paper-dashboard-angular?ref=pkr-github-readme) |
-
+| HTML                                                                                                                                                                                                                           | React                                                                                                                                                                                                                                       | Vue                                                                                                                                                                                      
 ## Reporting Issues
 
 We use GitHub Issues as the official bug tracker for the Efoye IOT-BBMS 2. Here are some advices for our users that want to report an issue:
@@ -175,18 +172,6 @@ We use GitHub Issues as the official bug tracker for the Efoye IOT-BBMS 2. Here 
 [changelog]: ./CHANGELOG.md
 [license]: ./LICENSE.md
 
-## Useful Links
-
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-- [Affiliate Program](https://www.Efoye-IOT-BBMS.com/affiliates/new?ref=pkr-github-readme) (earn money)
-- [Blog Efoye IOT-BBMS](http://blog.Efoye-IOT-BBMS.com/?ref=pkr-github-readme)
-- [Free Products](https://www.Efoye-IOT-BBMS.com/bootstrap-themes/free?ref=pkr-github-readme) from Efoye IOT-BBMS
-- [Premium Products](https://www.Efoye-IOT-BBMS.com/bootstrap-themes/premium?ref=pkr-github-readme) from Efoye IOT-BBMS
-- [React Products](https://www.Efoye-IOT-BBMS.com/bootstrap-themes/react-themes?ref=pkr-github-readme) from Efoye IOT-BBMS
-- [Angular Products](https://www.Efoye-IOT-BBMS.com/bootstrap-themes/angular-themes?ref=pkr-github-readme) from Efoye IOT-BBMS
-- [VueJS Products](https://www.Efoye-IOT-BBMS.com/bootstrap-themes/vuejs-themes?ref=pkr-github-readme) from Efoye IOT-BBMS
-- [More products](https://www.Efoye-IOT-BBMS.com/bootstrap-themes?ref=pkr-github-readme) from Efoye IOT-BBMS
-- Check our Bundles [here](https://www.Efoye-IOT-BBMS.com/bundles?ref=pkr-github-readme)
 
 ### Social Media
 
