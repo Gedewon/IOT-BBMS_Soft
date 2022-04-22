@@ -1,28 +1,10 @@
-foye IOT-BBMS React](https://raw.githubusercontent.com/Efoye_IOT-BBMS/public-assets/master/IOT-BBMS-react/opt_pk_react_thumbnail.jpg)
-
-Efoye IOT-BBMS React is a free Bootstrap 4, React, React Hooks and Reactstrap UI Kit with pale colors, beautiful typography and thoughtful drawings. We've created it having paper and drawings in mind.
-
-Any elements that is vital to code a web project is already here, fully coded. All components are fully responsive and look great on every screen size. Transitions, shadows, colors, they all resemble the flow you would have using pieces of paper.
-
-We have created the UI Kit kit having pastel colors and paper in mind. It feels light, fresh and easy to go through. It features beautiful typography, font icons and thoughtful layouts.
 
 ### React Hooks support
 
 Efoye IOT-BBMS React is built on top of Bootstrap 4 using React and Reactstrap, so it fully supports React Hooks.
 
-### Bootstrap 4 support
 
-Efoye IOT-BBMS React is built on top of Bootstrap 4 using React and Reactstrap, so it fully supports them. Most of the elements from the framework are re-designed to resemble sheets of paper and color pastels. If the are elements that we have not touched, they will gracefully fall back to the Bootstrap 4 default.
 
-### Examples
-
-Efoye IOT-BBMS React contains some pages already designed and implemented. Here is the list with the pages available. We are also working on more example pages, that you will be able to access no matter the version you download.
-
-- [Landing Page](https://demos.Efoye-IOT-BBMS.com/IOT-BBMS-react/#/landing-page?ref=pkr-github-readme)
-- [Register](https://demos.Efoye-IOT-BBMS.com/IOT-BBMS-react/#/register-page?ref=pkr-github-readme)
-- [Profile Page](https://demos.Efoye-IOT-BBMS.com/IOT-BBMS-react/#/profile-page?ref=pkr-github-readme)
-
-Tutorial and components
 
 Once you download the archive, you will be able find a tutorial page inside it explaining how to start using it. You can also check the [documentation online](https://demos.Efoye-IOT-BBMS.com/IOT-BBMS-react/#/documentation/introduction?ref=pkr-github-readme).
 
