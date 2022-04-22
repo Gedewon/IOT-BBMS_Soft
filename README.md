@@ -1,6 +1,4 @@
-# [Efoye IOT-BBMS React - Free Bootstrap 4, React, React Hooks and Reactstrap UI Kit](https://demos.Efoye-IOT-BBMS.com/IOT-BBMS-react/#/index?ref=pkr-github-readme) ![version](https://img.shields.io/badge/version-1.3.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/Efoye_IOT-BBMS/material-kit.svg?maxAge=2592000)](https://github.com/Efoye_IOT-BBMS/IOT-BBMS-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/Efoye_IOT-BBMS/IOT-BBMS-react.svg?maxAge=2592000)](https://github.com/Efoye_IOT-BBMS/IOT-BBMS-react/issues?q=is%3Aissue+is%3Aclosed) [![Join the chat at https://gitter.im/NIT-dgp/General](https://badges.gitter.im/NIT-dgp/General.svg)](https://gitter.im/Efoye-IOT-BBMS-general/Lobby) [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/E4aHAQy)
-
-![Efoye IOT-BBMS React](https://raw.githubusercontent.com/Efoye_IOT-BBMS/public-assets/master/IOT-BBMS-react/opt_pk_react_thumbnail.jpg)
+foye IOT-BBMS React](https://raw.githubusercontent.com/Efoye_IOT-BBMS/public-assets/master/IOT-BBMS-react/opt_pk_react_thumbnail.jpg)
 
 Efoye IOT-BBMS React is a free Bootstrap 4, React, React Hooks and Reactstrap UI Kit with pale colors, beautiful typography and thoughtful drawings. We've created it having paper and drawings in mind.
 
